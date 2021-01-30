@@ -55,7 +55,7 @@
     current.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   });
 
-  document.body.style.fontSize = option.sidebarFontSize;
+  document.body.style.fontSize = option.sidebarFontSize + 'px';
   document.getElementById('theme').href = option.darkMode ? 'dark.css' : 'light.css';
 
 }());
