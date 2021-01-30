@@ -1,0 +1,14 @@
+{
+  "extensionName": {
+    "message": "Twitter Bing Translate Sidebar"
+  },
+  "extensionDescription": {
+    "message": "Open sidebar, and point mouse to tweets, translation will be shown on sidebar."
+  },
+  "extensionSidebar": {
+    "message": "Twitter Bing Translate Sidebar"
+  },
+  "translateError": {
+    "message": "(Translate Error)"
+  }
+}

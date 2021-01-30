@@ -1,0 +1,69 @@
+{
+
+  "manifest_version": 2,
+  "name": "__MSG_extensionName__",
+  "description": "__MSG_extensionDescription__",
+  "version": "0.0.1",
+  "default_locale": "en",
+
+  "icons": {
+    "48": "icon.svg"
+  },
+
+  "permissions": [
+    "storage",
+    "<all_urls>"
+  ],
+
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.bing.com/translator"
+      ],
+      "js": [
+        "worker.js"
+      ],
+      "all_frames": true,
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "https://twitter.com/*",
+        "https://mobile.twitter.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "all_frames": true,
+      "run_at": "document_start"
+    }
+  ],
+
+  "options_ui": {
+    "browser_style": false,
+    "page": "options/index.html"
+  },
+
+  "browser_action": {},
+
+  "sidebar_action": {
+    "default_icon": "icon.svg",
+    "default_title": "__MSG_extensionSidebar__",
+    "default_panel": "sidebar/index.html"
+  },
+
+  "applications": {
+    "gecko": {
+      "id": "{b142ce4e-b3db-4585-a75f-d9a8f277f3de}",
+      "strict_min_version": "78.0"
+    }
+  }
+
+}

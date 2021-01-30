@@ -1,0 +1,33 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/. */
+html, body {
+  margin: 0;
+  user-select: text;
+  cursor: auto;
+}
+
+.translate-item {
+  padding: 10px 0;
+}
+
+.translate-item.current {
+  animation: active_item 2s;
+}
+
+.translate-item .text {
+  padding: 10px;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.translate-item .translate {
+  margin: 0 10px;
+  padding: 10px;
+}
+
+.translate-item .translate:empty::before {
+  content: "\2026";
+}

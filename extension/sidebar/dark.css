@@ -1,0 +1,17 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/. */
+body {
+  background-color: #2a2a2e;
+  color: #f9f9fa;
+}
+
+@keyframes active_item {
+  from { background: #4a4a4f00; }
+  25% { background: #4a4a4fff; }
+  to { background: #4a4a4f00; }
+}
+
+.translate-item .translate {
+  background: #38383D;
+}
